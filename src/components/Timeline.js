@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
@@ -18,5 +19,9 @@ const Timeline = (props) => {
     </ul>
   );
 }
+
+Timeline.propTypes = {
+  events: PropTypes.array.isRequired
+};
 
 export default Timeline;
