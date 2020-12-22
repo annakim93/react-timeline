@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './TimelineEvent.css';
 import Timestamp from './Timestamp';
 
@@ -13,5 +14,11 @@ const TimelineEvent = (props) => {
     </div>
   );
 }
+
+TimelineEvent.propTypes = {
+  person: PropTypes.string.isRequired,
+  status: PropTypes.string.isRequired,
+  timeStamp: PropTypes.string.isRequired
+};
 
 export default TimelineEvent;
