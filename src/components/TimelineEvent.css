@@ -2,12 +2,16 @@
   display: grid;
   grid-template: 2rem auto 2rem / 1fr 1fr;
   padding: 0.5rem;
-  border-bottom: 3px solid #E6ECF0;
+  /* border-bottom: 3px solid #E6ECF0; */
   background-color: #FFF;
+  border: 3px solid #006d77;
+  border-radius: 10px;
+  margin-bottom: 3px;
 }
 
 .timeline-event:hover {
-  background-color: #F5F8FA;
+  /* background-color: #f1faee; */
+  border-color: #e29578;
 }
 
 .event-person {
